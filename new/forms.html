@@ -1,0 +1,29 @@
+<body>
+  <h1>Formulier</h1>
+  <span id="feedback"></span>
+  <br>
+  <label for="email">E-mailadres</label>
+  <br>
+  <input type="email" id="userEmail">
+  <br>
+  <input type="submit" onclick="checkForm()">
+  <script>
+    const userEmail = document.getElementById('userEmail');
+    const feedback = document.getElementById('feedback');
+
+    function checkForm() {
+      //userEmail.checkValidity() === "false"
+      if (!userEmail.checkValidity()) {
+        userEmail.style.borderColor = "red";
+        feedback.innerText = "Fout e-mailadres"
+      } else {
+        userEmail.style.borderColor = "green";
+        feedback.innerText = "";
+      }
+
+      if (userEmail.value == "") {
+        feedback.innerText = "Vul alle velden in";
+      }
+    }
+
+  </script>

@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#start {
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#start a {
+  padding: 20px;
+  display: block;
+  text-decoration-line: none;
+  color: black;
+  font-size: large;
+}
+
+#start a {
+  background-color: lightgreen;
+}
+
+img {
+  width: 300px
+}
+
+.users, #bulb, #weather {
+  width: 100px
+}
